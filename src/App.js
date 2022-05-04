@@ -1,16 +1,27 @@
-import { Button } from "react-bootstrap";
+import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import Header from "./Components/Header/Header";
+import Blogs from "./Pages/Blogs/Blogs";
+import Home from "./Pages/Home/Home";
+import NotFound from "./Pages/NotFound/NotFound";
 import "./Styles/App.css";
 
 function App() {
   return (
-    <div className="App text-center">
-      <h1 className="text-3xl mt-10 font-bold mx-auto text-center text-red-400 underline">
-        Checking Tailwind
-      </h1>
-      <Button variant="warning">React Bootstrap Button</Button>
-      <br />
-      <button className="btn btn-success">Bootstrap Button</button>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+
+        <Route path="/blogs" element={<Blogs />} />
+        {/* Protected Routes */}
+
+        {/* Not Found Route */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <ToastContainer />
+    </>
   );
 }
 

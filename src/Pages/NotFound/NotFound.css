@@ -1,0 +1,16 @@
+.error-404{
+    font-size: 128px;
+    color: #DC2626;
+}
+.text-message{
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 576px) {
+    .error-404{
+        font-size: 64px;
+    }
+    .text-message{
+        font-size: 14px;
+    }
+}
