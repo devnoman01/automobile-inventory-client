@@ -52,9 +52,33 @@ const Header = () => {
                 <li className="nav-item">
                   <Link
                     className="nav-link text-dark font-medium menu-link"
-                    to="/services"
+                    to="/manageInventories"
                   >
-                    Services
+                    Manage Inventories
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link text-dark font-medium menu-link"
+                    to="/manageItems"
+                  >
+                    Manage Items
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link text-dark font-medium menu-link"
+                    to="/addItems"
+                  >
+                    Add Items
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link text-dark font-medium menu-link"
+                    to="/myItems"
+                  >
+                    My Items
                   </Link>
                 </li>
                 <li className="nav-item">

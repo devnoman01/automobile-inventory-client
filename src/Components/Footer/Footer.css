@@ -39,6 +39,8 @@ footer{
 }
 
 
+/* smartphone view CSS */
+
 @media only screen and (max-width: 575px) {
     footer{
         margin-top: 30px;
