@@ -1,6 +1,14 @@
 import React from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faLinkedin,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
 const Footer = () => {
@@ -10,7 +18,7 @@ const Footer = () => {
   //   toast.success("Thanks for Subscribing");
   // };
   return (
-    <footer className="w-full bg-[#D8F0FF]">
+    <footer className="w-full bg-[#FEE2E2]">
       <div className="container footer-container">
         <div className="row">
           {/* branding */}
@@ -21,6 +29,28 @@ const Footer = () => {
               Making easy inventory system for automobile dealers and grow
               better business
             </p>
+            <div className="d-flex flex-row social-icon-div">
+              <FontAwesomeIcon
+                className="footer-social-icons"
+                icon={faFacebook}
+              />
+              <FontAwesomeIcon
+                className="footer-social-icons"
+                icon={faInstagram}
+              />
+              <FontAwesomeIcon
+                className="footer-social-icons"
+                icon={faTwitter}
+              />
+              <FontAwesomeIcon
+                className="footer-social-icons"
+                icon={faLinkedin}
+              />
+              <FontAwesomeIcon
+                className="footer-social-icons"
+                icon={faYoutube}
+              />
+            </div>
           </div>
           {/* features menulist */}
           <div className="col-lg-2 col-md-12 col-sm-12 footer-divs">

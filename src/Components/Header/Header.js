@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky-top bg-[#D8F0FF]">
+    <header className="sticky-top bg-[#FEE2E2]">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light py-3">
           <div className="container-fluid">
@@ -73,9 +73,11 @@ const Header = () => {
                     About
                   </Link>
                 </li>
-                <Link to="/login" className="btn btn-dark">
-                  Login
-                </Link>
+                <li className="nav-item">
+                  <Link to="/login" className="btn btn-danger">
+                    Login
+                  </Link>
+                </li>
               </ul>
               {/* 
               <form className="">
