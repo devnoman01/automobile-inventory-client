@@ -6,6 +6,7 @@ import Banner from "../Banner/Banner";
 import CoreFeatures from "../CoreFeatures/CoreFeatures";
 import FeaturedInventoryItems from "../FeaturedInventoryItems/FeaturedInventoryItems";
 import Statistics from "../Statistics/Statistics";
+import Subscribe from "../ContactUs/ContactUs";
 import WhyUs from "../WhyUs/WhyUs";
 
 const Home = () => {
@@ -26,7 +27,10 @@ const Home = () => {
       {/* why choose us part (extra-3) */}
       <WhyUs />
 
+      {/* statistics part (extra-4) */}
       <Statistics />
+
+      <Subscribe />
 
       {/* footer part */}
       <Footer />
