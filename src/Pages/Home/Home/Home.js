@@ -5,6 +5,7 @@ import AuthenticationFeatures from "../AuthenticationFeatures/AuthenticationFeat
 import Banner from "../Banner/Banner";
 import CoreFeatures from "../CoreFeatures/CoreFeatures";
 import FeaturedInventoryItems from "../FeaturedInventoryItems/FeaturedInventoryItems";
+import Statistics from "../Statistics/Statistics";
 import WhyUs from "../WhyUs/WhyUs";
 
 const Home = () => {
@@ -22,7 +23,10 @@ const Home = () => {
       {/* authentication features part (extra-2) */}
       <AuthenticationFeatures />
 
+      {/* why choose us part (extra-3) */}
       <WhyUs />
+
+      <Statistics />
 
       {/* footer part */}
       <Footer />

@@ -1,0 +1,24 @@
+.statistic-card-parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 50px;
+}
+
+
+/* tablet view CSS */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .statistic-card-parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* smartphone view CSS */
+
+@media only screen and (max-width: 767px) {
+    .statistic-card-parent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

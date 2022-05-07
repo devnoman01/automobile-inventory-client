@@ -10,7 +10,7 @@ const FeaturedInventoryItems = () => {
 
   const navigate = useNavigate();
 
-  // dynamic route navigation
+  // route navigation
   const navigateToManageInventories = (id) => {
     navigate("/manageInventories");
   };

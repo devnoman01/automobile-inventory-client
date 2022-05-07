@@ -4,7 +4,7 @@ import "./Banner.css";
 const Banner = () => {
   return (
     //   hero section banner
-    <div className="w-full">
+    <div className="w-full banner-bg">
       <div className="container">
         <div className="row banner-row">
           {/* half width with title description and button */}

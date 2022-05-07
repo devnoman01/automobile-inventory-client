@@ -3,7 +3,7 @@ import "./CoreFeatures.css";
 
 const CoreFeatures = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="bg-[#F7F7F7]">
       <div className="container px-4 md:py-30 py-12 mx-auto">
         <div className="text-center mb-16">
           {/* section title */}
@@ -24,7 +24,7 @@ const CoreFeatures = () => {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {/* add feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-[#DC2626] svg-div flex-shrink-0">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#fee2e2] text-[#DC2626] svg-div flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12"
