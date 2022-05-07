@@ -7,7 +7,9 @@ const CoreFeatures = () => {
       <div className="container px-4 md:py-30 py-12 mx-auto">
         <div className="text-center mb-16">
           {/* section title */}
-          <h1 className="section-heading text-center">Awesome CRUD Features</h1>
+          <h1 className="section-heading mb-5 text-center">
+            Awesome CRUD Features
+          </h1>
 
           {/* section subtitle */}
           <p className="crud-feature-subheading leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto px-3 text-gray-500s">
@@ -16,13 +18,13 @@ const CoreFeatures = () => {
             very easily.
           </p>
           <div className="flex mt-4 justify-center">
-            <div className="w-28 h-1 rounded-full bg-red-500 inline-flex"></div>
+            <div className="w-28 h-1 rounded-full bg-[#DC2626] inline-flex"></div>
           </div>
         </div>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {/* add feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-[#DC2626] svg-div flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12"
@@ -48,7 +50,7 @@ const CoreFeatures = () => {
           </div>
           {/* read feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#fee2e2] text-[#DC2626] svg-div flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12"
@@ -74,7 +76,7 @@ const CoreFeatures = () => {
           </div>
           {/* update feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-[#DC2626] svg-div flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12"
@@ -100,7 +102,7 @@ const CoreFeatures = () => {
           </div>
           {/* delete feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-[#DC2626] svg-div flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12"

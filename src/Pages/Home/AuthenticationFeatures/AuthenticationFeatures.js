@@ -3,7 +3,7 @@ import "./AuthenticationFeatures.css";
 
 const AuthenticationFeatures = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="body-font">
       <div className="container px-4 py-24 mx-auto flex flex-wrap">
         <div className="mx-auto text-center mb-12 auth-feature-heading-div">
           {/*
@@ -22,7 +22,7 @@ const AuthenticationFeatures = () => {
             experience
           </p>
           <div className="flex mt-4 justify-center">
-            <div className="w-28 h-1 rounded-full bg-red-500 inline-flex"></div>
+            <div className="w-28 h-1 rounded-full bg-[#DC2626] inline-flex"></div>
           </div>
         </div>
         <div className="flex flex-wrap w-full">
@@ -35,7 +35,7 @@ const AuthenticationFeatures = () => {
               <div className="h-full w-14 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-red-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#DC2626] inline-flex items-center justify-center text-white relative z-10">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -72,7 +72,7 @@ const AuthenticationFeatures = () => {
               <div className="h-full w-14 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-red-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#DC2626] inline-flex items-center justify-center text-white relative z-10">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -109,7 +109,7 @@ const AuthenticationFeatures = () => {
               <div className="h-full w-14 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-red-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#DC2626] inline-flex items-center justify-center text-white relative z-10">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -147,7 +147,7 @@ const AuthenticationFeatures = () => {
               <div className="h-full w-14 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-red-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#DC2626] inline-flex items-center justify-center text-white relative z-10">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -181,7 +181,7 @@ const AuthenticationFeatures = () => {
                     log out part
             */}
             <div className="flex relative auth-feature-items">
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-red-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#DC2626] inline-flex items-center justify-center text-white relative z-10">
                 <svg
                   fill="none"
                   stroke="currentColor"
