@@ -18,7 +18,9 @@ const FeaturedInventoryItems = () => {
   return (
     <div className="">
       <div className="container featured-Inventory-container">
-        <h1 className="text-center section-heading">Sample Inventory Items</h1>
+        <h1 className="text-center mb-16 section-heading">
+          Sample Inventory Items
+        </h1>
         <div className="featured-item-parent-div">
           {featuredProducts.map((product) => (
             <FeaturedInventoryItem key={product.id} product={product} />

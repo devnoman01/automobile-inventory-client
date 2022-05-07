@@ -1,0 +1,27 @@
+.img-div{
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.phone-img{
+    margin: 0 auto;
+    height: 700px;
+}
+.auth-feature-items{
+    padding-bottom: 30px;
+}
+.auth-feature-items p{
+    color: #818181;
+}
+
+
+/* smartphone view CSS */
+
+@media only screen and (max-width: 767px) {
+    .auth-feature-items{
+        padding-bottom: 30px;
+    }
+    .phone-img{
+        margin: 0 auto;
+        height: 700px;
+    }
+}

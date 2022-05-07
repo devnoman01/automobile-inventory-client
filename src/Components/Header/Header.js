@@ -22,10 +22,8 @@ const Header = () => {
               to="/"
             >
               <ion-icon className="logo" name="logo-buffer"></ion-icon>
-              <span className="fs-6 fw-bold my-0">
-                <span className="m-0">Automobile</span>
-                <br />
-                Inventory
+              <span className="brand-text my-0">
+                <span className="m-0">Automobile Inventory</span>
               </span>
             </Link>
             <button

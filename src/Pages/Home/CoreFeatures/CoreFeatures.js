@@ -6,7 +6,10 @@ const CoreFeatures = () => {
     <section className="text-gray-600 body-font">
       <div className="container px-4 md:py-30 py-12 mx-auto">
         <div className="text-center mb-16">
+          {/* section title */}
           <h1 className="section-heading text-center">Awesome CRUD Features</h1>
+
+          {/* section subtitle */}
           <p className="crud-feature-subheading leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto px-3 text-gray-500s">
             Create, Read, Update and Delete is the core feature of any inventory
             system. Automobile Inventory helps users to handle CRUD operation in
@@ -17,6 +20,7 @@ const CoreFeatures = () => {
           </div>
         </div>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+          {/* add feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
               <svg
@@ -42,6 +46,7 @@ const CoreFeatures = () => {
               </p>
             </div>
           </div>
+          {/* read feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
               <svg
@@ -67,6 +72,7 @@ const CoreFeatures = () => {
               </p>
             </div>
           </div>
+          {/* update feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
               <svg
@@ -92,6 +98,7 @@ const CoreFeatures = () => {
               </p>
             </div>
           </div>
+          {/* delete feature card */}
           <div className="crud-feature-card p-4 lg:w-1/4 md:w-1/2 flex flex-col text-center items-center">
             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 svg-div flex-shrink-0">
               <svg
