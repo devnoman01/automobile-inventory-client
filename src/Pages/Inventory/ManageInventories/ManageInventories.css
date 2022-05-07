@@ -1,0 +1,16 @@
+
+/* .add-item-button{
+    width: 300px;
+} */
+.top-bar-item{
+    width: fit-content;
+    display: inline;
+}
+
+/* smartphone view CSS */
+
+@media only screen and (max-width: 575px) {
+    .add-item-button{
+        width: 100%;
+    }
+}

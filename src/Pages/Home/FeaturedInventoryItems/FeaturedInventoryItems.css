@@ -1,0 +1,41 @@
+.featured-Inventory-container{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.section-heading{
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 50px;
+}
+.featured-item-parent-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+/* tablet view CSS */
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .featured-item-parent-div{
+        padding: 0px 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* smartphone view CSS */
+
+@media only screen and (max-width: 575px) {
+    .section-heading{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .featured-item-parent-div{
+        padding: 0px 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+}

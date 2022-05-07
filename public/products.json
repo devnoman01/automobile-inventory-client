@@ -3,8 +3,8 @@
        "id":1,
        "name":"MAZDA CX-30",
        "category":"SUV",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2022/cx-30/carousel/angles/2022-cx-30-2-5s-jet-black.png",
-       "description":"No matter where your path leads, the Mazda CX-30 with available 2.5 Turbo engine is made to help you follow it. The Skyactiv-G 2.5 Turbo engine delivers up to a responsive 250 hp and 320 lb-ft of torque. It’s a level of performance you don’t usually associate with a CUV. And it’s the kind that might inspire your next big moment.",
+       "image":"https://www.mazdausa.com/siteassets/vehicles/2023/cx-50/build-and-price/carousel-jellies/2023-mazda-cx-50-2.5-s-jet-black-carousel.png",
+       "description":"No matter where your path leads, the Mazda CX-30 with available 2.5 Turbo engine is made to help you follow it. The Skyactiv-G 2.5 Turbo engine delivers up to a responsive 250 hp and 320 lb-ft of torque. It’s a level of performance you don’t usually associate with a CUV.",
        "price":"$22,500",
        "quantity":10,
        "supplier":"MAZDA BANGLADESH"
@@ -14,7 +14,7 @@
        "name":"MAZDA CX-5",
        "category":"SUV",
        "image":"https://www.mazdausa.com/siteassets/vehicles/2022/cx-5-p1/build-and-price/trims/carousel/2022-cx5-2.5-s-jet-black-mica-carousel.png",
-       "description":"With its exquisitely sculpted exterior and sophisticated interior space, the 2022 Mazda CX-5 feels like it’s tailored to you. Combined with our now standard i-Activ AWD and increased horsepower available for turbo models, this CUV provides an elevated driving experience that invigorates both body and mind.",
+       "description":"With its exquisitely sculpted exterior and sophisticated interior space, the 2022 Mazda CX-5 feels like it’s tailored to you. Combined with our now standard i-Activ AWD and increased horsepower available for turbo models, this CUV provides an elevated driving experience.",
        "price":"$26,250",
        "quantity":8,
        "supplier":"MAZDA BANGLADESH"
@@ -24,7 +24,7 @@
        "name":"MAZDA CX-50",
        "category":"SUV",
        "image":"https://www.mazdausa.com/siteassets/vehicles/2023/cx-50/build-and-price/carousel-jellies/2023-mazda-cx-50-2.5-s-jet-black-carousel.png",
-       "description":"The temptation to venture into nature becomes even more enticing when the journey becomes its own reward. Enabled by Mazda’s latest generation of driving technology, you’ll feel an incredible sense of oneness with the CX-50 on nearly any terrain.",
+       "description":"The temptation to venture into nature becomes even more enticing when the journey becomes its own reward. Enabled by Mazda’s latest generation of driving technology, you’ll feel an incredible sense of oneness and driving experience with the CX-50 on nearly any terrain.",
        "price":"$26,800",
        "quantity":7,
        "supplier":"MAZDA BANGLADESH"
@@ -32,9 +32,9 @@
     {
        "id":4,
        "name":"MAZDA CX-9",
-       "category":"SEDAN",
+       "category":"SUV",
        "image":"https://www.mazdausa.com/siteassets/vehicles/2022/cx-9/build-and-price/trims/carousel/2022-mazda-cx-9-trims-_0001_sport.png",
-       "description":"Upholstery plays a unique role in car design. The CX-9 Signature’s leather-trimmed interior is available in either Parchment or Deep Chestnut Nappa and includes details such as quilting and piping on the first- and second-row seats, leather-wrapped steering wheel, Santos Rosewood inlays and a geometric pattern in the aluminum trim.",
+       "description":"Upholstery plays a unique role in car design. The CX-9 Signature’s leather-trimmed interior is available in either Parchment or Deep Chestnut Nappa and includes details such as quilting and piping on the first- and second-row seats, leather-wrapped steering wheel and Santos Rosewood inlays.",
        "price":"$35,630",
        "quantity":5,
        "supplier":"BD AUTO LTD."
@@ -92,7 +92,7 @@
     {
        "id":10,
        "name":"MAZDA MX-30 EV",
-       "category":"ELECTRIC",
+       "category":"ELECTRIC CAR",
        "image":"https://www.mazdausa.com/siteassets/vehicles/electric-cars/mx-30/packages/carousel-thumbnail/mazda-mx-30-premium-plus-electric-vehicle-v2.jpg",
        "description":"Our first fully electric vehicle is engineered to deepen the connection between vehicle and driver. Mazda’s brand-new electrification technology, e-Skyactiv, was designed around human characteristics to deliver intuitive handling and a smoother as well as seamless driving experience.",
        "price":"$33,470",

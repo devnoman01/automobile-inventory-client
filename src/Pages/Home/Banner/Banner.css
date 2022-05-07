@@ -1,6 +1,5 @@
 .banner-row{
-    display: grid;
-    padding: 200px auto;
+    padding: 100px 0px;
 }
 .banner h1{
     font-weight: 700;
@@ -21,6 +20,9 @@
 /* tablet view CSS */
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {
+    .banner-row{
+        padding: 70px 0px;
+    }
     .banner{
         text-align: center;
     }
@@ -45,6 +47,9 @@
 /* smartphone view CSS */
 
 @media only screen and (max-width: 575px) {
+    .banner-row{
+        padding: 50px 0px;
+    }
     .banner{
         text-align: center;
     }

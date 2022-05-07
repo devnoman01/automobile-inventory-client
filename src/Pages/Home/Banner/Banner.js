@@ -6,7 +6,7 @@ const Banner = () => {
     //   hero section banner
     <div className="w-full">
       <div className="container">
-        <div className="row py-5">
+        <div className="row banner-row">
           {/* half width with title description and button */}
           <div className="col-md-6 col-sm-12 banner my-auto">
             <h1>

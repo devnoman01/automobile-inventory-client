@@ -2,12 +2,21 @@
     color: #DC2626;
     font-size: 36px;
 }
-.primary-button{
-    background-color: #DC2626;
-    color: #fff;
-    
+header{
+    position: sticky;
+    top: 0px;
 }
-.primary-button:hover{
-    background-color: #ef4444;
-    color: #fff;
+.nav-div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* smartphone view CSS */
+
+@media only screen and (max-width: 767px) {
+    .nav-div{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }

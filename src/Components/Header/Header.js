@@ -13,10 +13,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky-top bg-[#FEE2E2]">
+    <header className="bg-[#FEE2E2]">
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light py-3">
-          <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <div className="container-fluid nav-div">
             <Link
               className="navbar-brand d-flex align-items-center gap-1"
               to="/"
@@ -43,7 +43,7 @@ const Header = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link
-                    className="nav-link text-dark font-medium menu-link"
+                    className="nav-link text-dark hover:text-[#DC2626] font-medium menu-link"
                     to="/home"
                   >
                     Home
