@@ -2,11 +2,6 @@
 .add-item-button{
     width: 100%;
 } 
-.top-bar-item{
-    width: fit-content;
-    display: inline;
-}
-
 .inventory-item{
     padding: 14px 0px;
     background-color: #111;
