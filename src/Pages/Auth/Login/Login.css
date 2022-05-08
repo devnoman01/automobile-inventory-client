@@ -10,6 +10,9 @@
 .login-form{
     text-align: left;
 }
+.forgot-password-text{
+    text-align: left;
+}
 
 
 /* smartphone view CSS */
@@ -20,6 +23,9 @@
         margin-bottom: 20px;
     }
     .login-form{
+        text-align: center;
+    }
+    .forgot-password-text{
         text-align: center;
     }
 }

@@ -42,7 +42,6 @@ const Login = () => {
   const handleResetPassword = (event) => {
     const email = emailRef.current.value;
     if (email) {
-      console.log(auth);
       sendPasswordResetEmail(auth, email).then(() =>
         toast.success("Password Reset Email Sent")
       );
@@ -81,15 +80,7 @@ const Login = () => {
             type="submit"
             value="Login"
           />
-          <p className="text-lg">
-            Forgot Password?{" "}
-            <button
-              onClick={handleResetPassword}
-              className="text-primary font-medium"
-            >
-              Reset Password
-            </button>
-          </p>
+
           <p className="text-lg">
             New User?{" "}
             <Link
@@ -100,6 +91,15 @@ const Login = () => {
             </Link>
           </p>
         </form>
+        <p className="text-lg forgot-password-text">
+          Forgot Password?{" "}
+          <button
+            onClick={handleResetPassword}
+            className="text-primary font-medium"
+          >
+            Reset Password
+          </button>
+        </p>
       </div>
       <div className="pb-5">
         <SocialLogin />

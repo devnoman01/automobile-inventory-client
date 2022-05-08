@@ -12,7 +12,7 @@ const Header = () => {
   const handleSignOut = (event) => {
     event.preventDefault();
     signOut(auth);
-    toast.info("Signed out!");
+    toast.success("Signed out!");
   };
 
   return (

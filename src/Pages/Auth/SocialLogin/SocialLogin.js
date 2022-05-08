@@ -1,11 +1,24 @@
 import React from "react";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
+import auth from "../../../firebase.init";
 
 const SocialLogin = () => {
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
   let errorElement;
+
+  // if redirected to login page then redirect back after login
+  if (user) {
+    navigate(from, { replace: true });
+  }
+
+  // checking any error and updating if needed
+  if (error) {
+    errorElement = <p className="text-danger">Error: {error?.message}</p>;
+  }
 
   return (
     <div>
@@ -18,7 +31,7 @@ const SocialLogin = () => {
       <div>
         {/* google login button with function */}
         <button
-          //   onClick={() => signInWithGoogle()}
+          onClick={() => signInWithGoogle()}
           className="btn border border-2 w-100 d-flex align-items-center justify-content-center gap-2 mx-auto my-3 social-login-button"
         >
           <img
