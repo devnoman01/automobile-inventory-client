@@ -1,16 +1,19 @@
+import { signOut } from "firebase/auth";
 import React, { useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import auth from "../../firebase.init";
 import "./Header.css";
 
 const Header = () => {
-  let [open, setOpen] = useState(false);
-  let Links = [
-    { name: "HOME", link: "/" },
-    { name: "SERVICE", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "BLOG'S", link: "/" },
-    { name: "CONTACT", link: "/" },
-  ];
+  const [user, loading, error] = useAuthState(auth);
+
+  const handleSignOut = (event) => {
+    event.preventDefault();
+    signOut(auth);
+    toast.info("Signed out!");
+  };
 
   return (
     <header className="bg-[#FEE2E2]">
@@ -96,26 +99,24 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/login" className="btn btn-danger">
-                    Login
-                  </Link>
+                  <form className="">
+                    {user ? (
+                      <button
+                        // onClick={handleSignOut}
+                        className="btn btn-danger"
+                      >
+                        Sign out
+                      </button>
+                    ) : (
+                      <Link to="/login" className="btn primary-button">
+                        Login
+                      </Link>
+                    )}
+                  </form>
                 </li>
               </ul>
               {/* 
-              <form className="">
-                {user ? (
-                  <button
-                    onClick={handleSignOut}
-                    className="btn primary-button"
-                  >
-                    Sign out
-                  </button>
-                ) : (
-                  <Link to="/login" className="btn primary-button">
-                    Login
-                  </Link>
-                )}
-              </form>
+              
                */}
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [error, setError] = useState("");
@@ -19,7 +20,7 @@ const Login = () => {
             name="email"
             className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2 mb-3"
           />
-          <label htmlFor="passowrd">Enter email</label>
+          <label htmlFor="passowrd">Enter password</label>
           <input
             required
             type="password"
@@ -40,7 +41,12 @@ const Login = () => {
           </p>
           <p className="text-lg">
             New User?{" "}
-            <span className="text-primary font-medium">Register Here</span>
+            <Link
+              to="/register"
+              className="no-underline text-primary font-medium"
+            >
+              Register Here
+            </Link>
           </p>
         </form>
       </div>
