@@ -6,6 +6,7 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { toast } from "react-toastify";
 import Loading from "../../../Components/Loading/Loading";
+import { sendPasswordResetEmail } from "firebase/auth";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -38,6 +39,18 @@ const Login = () => {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
 
+  const handleResetPassword = (event) => {
+    const email = emailRef.current.value;
+    if (email) {
+      console.log(auth);
+      sendPasswordResetEmail(auth, email).then(() =>
+        toast.success("Password Reset Email Sent")
+      );
+    } else {
+      toast.error("Please Enter Your Email Address");
+    }
+  };
+
   return (
     <div className="col-lg-4 col-md-6 col-sm-12 mx-auto px-3 my-auto">
       <div className="login-form-parent bg-[#F9F9F9] border rounded-lg shadow-md p-4 mx-auto text-center">
@@ -56,7 +69,6 @@ const Login = () => {
           />
           <label htmlFor="password">Enter password</label>
           <input
-            required
             type="password"
             id="password"
             name="password"
@@ -71,7 +83,12 @@ const Login = () => {
           />
           <p className="text-lg">
             Forgot Password?{" "}
-            <span className="text-primary font-medium">Reset Password</span>
+            <button
+              onClick={handleResetPassword}
+              className="text-primary font-medium"
+            >
+              Reset Password
+            </button>
           </p>
           <p className="text-lg">
             New User?{" "}
