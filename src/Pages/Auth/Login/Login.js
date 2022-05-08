@@ -19,11 +19,12 @@ const Login = () => {
 
   const emailRef = useRef("");
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    signInWithEmailAndPassword(email, password);
+    await signInWithEmailAndPassword(email, password);
+    await toast.success("Login successful");
   };
 
   if (loading) {
@@ -32,7 +33,6 @@ const Login = () => {
 
   if (user) {
     navigate(from, { replace: true });
-    toast.success("Login successful");
   }
 
   if (error) {
