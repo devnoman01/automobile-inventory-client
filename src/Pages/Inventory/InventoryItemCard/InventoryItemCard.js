@@ -9,6 +9,7 @@ const InventoryItemCard = ({ product }) => {
       </div>
       <div className="flex-grow px-2 sm:mt-0 inventory-item-card-info">
         <h2 className="text-xl title-font font-medium my-0">{product.name}</h2>
+        <p className="font-medium my-0">ID: {product._id}</p>
         <p className="font-medium my-0 inline-block mr-4">
           Category: {product.category}
         </p>

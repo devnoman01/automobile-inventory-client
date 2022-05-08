@@ -23,7 +23,6 @@ const ManageItem = () => {
           <p class="leading-relaxed">{description}</p>
           <p class="leading-relaxed text-lg font-medium">Stock: {quantity}</p>
           <p class="leading-relaxed font-medium">{supplier}</p>
-
           <div class="flex">
             <span class="title-font font-medium text-2xl">{price}</span>
             <button class="flex ml-auto bg-[#EF4444] text-white rounded px-6 py-2 hover:bg-[#DC2626]">
