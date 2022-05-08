@@ -24,7 +24,6 @@ const Login = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     signInWithEmailAndPassword(email, password);
-    toast.success("Login successful");
   };
 
   if (loading) {
@@ -33,6 +32,7 @@ const Login = () => {
 
   if (user) {
     navigate(from, { replace: true });
+    toast.success("Login successful");
   }
 
   if (error) {

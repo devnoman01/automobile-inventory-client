@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Header from "./Components/Header/Header";
 import Login from "./Pages/Auth/Login/Login";
 import Register from "./Pages/Auth/Register/Register";
+import RequireAuth from "./Pages/Auth/RequireAuth/RequireAuth";
 import Blogs from "./Pages/Blogs/Blogs";
 import Home from "./Pages/Home/Home/Home";
 import ManageInventories from "./Pages/Inventory/ManageInventories/ManageInventories";
@@ -18,28 +19,32 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/manageInventories" element={<ManageInventories />} />
-        <Route path="//inventory/:id" element={<ManageItem />} />
-
         <Route path="/blogs" element={<Blogs />} />
-        {/* Protected Routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+        {/* Protected Routes */}
+        <Route
+          path="/manageInventories"
+          element={
+            <RequireAuth>
+              <ManageInventories />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="//inventory/:id"
+          element={
+            <RequireAuth>
+              <ManageItem />
+            </RequireAuth>
+          }
+        />
 
         {/* Not Found Route */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+      <ToastContainer />
     </>
   );
 }
