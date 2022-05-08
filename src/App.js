@@ -42,7 +42,7 @@ function App() {
           }
         />
         <Route
-          path="//inventory/:id"
+          path="//inventory/:vehicleId"
           element={
             <RequireAuth>
               <ManageItem />

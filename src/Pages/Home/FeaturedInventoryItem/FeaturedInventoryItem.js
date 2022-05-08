@@ -3,13 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import "./FeaturedInventoryItem.css";
 
 const FeaturedInventoryItem = ({ product }) => {
-  const { id, name, category, description, image, price, quantity } = product;
+  const { _id, name, category, description, image, price, quantity } = product;
 
   const navigate = useNavigate();
 
   // dynamic route navigation
-  const navigateToProductDetail = (id) => {
-    navigate(`/inventory/${id}`);
+  const navigateToProductDetail = (_id) => {
+    navigate(`/inventory/${_id}`);
   };
 
   return (
@@ -40,7 +40,7 @@ const FeaturedInventoryItem = ({ product }) => {
       </div>
       <div className="card-button-div mx-auto">
         <button
-          onClick={() => navigateToProductDetail(id)}
+          onClick={() => navigateToProductDetail(_id)}
           className="bg-[#fee2e2] text-[#b91c1c] font-semibold no-underline card-link d-flex rounded py-2 px-6"
         >
           Stock Update

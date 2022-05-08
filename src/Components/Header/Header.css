@@ -20,8 +20,28 @@ header{
 .menu-link{
     font-family: 'Poppins', sans-serif;
 }
+.users-buttons{
+    flex-direction: row;
+}
+.header-btn{
+    margin-left: 15px;
+}
 
-/* smartphone view CSS */
+/* table view CSS */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .users-buttons{
+        flex-direction: column;
+    }
+    .header-btn{
+        margin-left: 0px;
+        width: fit-content;
+    }
+}
+
+
+
+    /* smartphone view CSS */
 
 @media only screen and (max-width: 767px) {
     .nav-div{
@@ -30,5 +50,12 @@ header{
     }
     .brand-text{
         font-weight: 600;
+    }
+    .users-buttons{
+        flex-direction: column;
+    }
+    .header-btn{
+        margin-left: 0px;
+        width: fit-content;
     }
 }

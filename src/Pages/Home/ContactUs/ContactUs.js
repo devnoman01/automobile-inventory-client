@@ -38,7 +38,7 @@ const ContactUs = () => {
           </p>
         </div>
         <div className="lg:w-1/2 md:w-1/2 contact-half-div">
-          <div className="bg-[#F7F7F7] rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+          <div className="bg-[#F5F5F5] border-1 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
             <h2 className="text-lg font-medium title-font mb-4">
               Send Your Message
             </h2>
@@ -78,8 +78,11 @@ const ContactUs = () => {
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
-            <button type="submit" className="btn btn-danger">
-              Subscribe
+            <button
+              type="submit"
+              className="bg-[#EF4444] text-white rounded px-6 py-2 hover:bg-[#DC2626]"
+            >
+              Send Message
             </button>
           </div>
         </div>

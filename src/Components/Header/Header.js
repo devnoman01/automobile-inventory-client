@@ -50,38 +50,7 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark font-medium menu-link"
-                    to="/manageInventories"
-                  >
-                    Manage Inventories
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark font-medium menu-link"
-                    to="/manageItems"
-                  >
-                    Manage Items
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark font-medium menu-link"
-                    to="/addItems"
-                  >
-                    Add Items
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark font-medium menu-link"
-                    to="/myItems"
-                  >
-                    My Items
-                  </Link>
-                </li>
+
                 <li className="nav-item">
                   <Link
                     className="nav-link text-dark font-medium menu-link"
@@ -90,7 +59,7 @@ const Header = () => {
                     Blogs
                   </Link>
                 </li>
-                <li className="nav-item me-3">
+                <li className="nav-item">
                   <Link
                     className="nav-link text-dark font-medium menu-link"
                     to="/about"
@@ -99,16 +68,53 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <form className="">
+                  <form className="flex users-buttons">
                     {user ? (
-                      <button
-                        onClick={handleSignOut}
-                        className="btn btn-danger"
-                      >
-                        Sign out
-                      </button>
+                      <>
+                        <li className="nav-item">
+                          <Link
+                            className="nav-link text-dark font-medium menu-link"
+                            to="/manageInventories"
+                          >
+                            Manage Inventories
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link
+                            className="nav-link text-dark font-medium menu-link"
+                            to="/manageItems"
+                          >
+                            Manage Items
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link
+                            className="nav-link text-dark font-medium menu-link"
+                            to="/addItems"
+                          >
+                            Add Items
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link
+                            className="nav-link text-dark font-medium menu-link"
+                            to="/myItems"
+                          >
+                            My Items
+                          </Link>
+                        </li>
+                        <button
+                          onClick={handleSignOut}
+                          className="bg-[#EF4444] text-white rounded px-6 py-2 hover:bg-[#DC2626] no-underline header-btn"
+                        >
+                          Sign out
+                        </button>
+                      </>
                     ) : (
-                      <Link to="/login" className="btn btn-danger">
+                      <Link
+                        to="/login"
+                        className="bg-[#EF4444] text-white rounded px-6 py-2 hover:bg-[#DC2626] no-underline header-btn"
+                      >
                         Login
                       </Link>
                     )}

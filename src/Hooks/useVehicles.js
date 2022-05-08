@@ -1,11 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const useProducts = () => {
+const useVehicles = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("products.json")
+    fetch("http://localhost:5000/vehicle")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -13,4 +13,4 @@ const useProducts = () => {
   return [products, setProducts];
 };
 
-export default useProducts;
+export default useVehicles;

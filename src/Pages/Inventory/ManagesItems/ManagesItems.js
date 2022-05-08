@@ -1,9 +1,9 @@
 import React from "react";
-import useProducts from "../../../Hooks/useProducts";
+import useVehicles from "../../../Hooks/useVehicles";
 import InventoryItemCard from "../InventoryItemCard/InventoryItemCard";
 
 const ManagesItems = () => {
-  const [products, setProducts] = useProducts();
+  const [products, setProducts] = useVehicles();
   return (
     <div className="w-full h-full bg-gray-100">
       <div className="container py-5">
@@ -53,7 +53,7 @@ const ManagesItems = () => {
 
         <div className="inventory-item-parent w-full">
           {products.map((product) => (
-            <InventoryItemCard key={product.id} product={product} />
+            <InventoryItemCard key={product._id} product={product} />
           ))}
         </div>
       </div>

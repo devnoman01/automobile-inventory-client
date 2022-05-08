@@ -177,7 +177,7 @@ const WhyUs = () => {
       <div className="text-center mt-5 mb-20">
         <button
           onClick={() => navigateToManageInventories()}
-          className="bg-[#EF4444] text-white rounded px-6 py-2"
+          className="bg-[#EF4444] text-white rounded px-6 py-2 hover:bg-[#DC2626]"
         >
           Try Out Now
         </button>

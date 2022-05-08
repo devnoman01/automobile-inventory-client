@@ -37,20 +37,12 @@ const Register = () => {
   }
 
   return (
-    <div className="col-lg-4 col-md-6 col-sm-12 mx-auto px-3 my-auto">
-      <div className="login-form-parent bg-[#F9F9F9] border rounded-lg shadow-md p-4 mx-auto text-center">
+    <div className="col-lg-3 col-md-6 col-sm-12 mx-auto px-3">
+      <div className="login-form-parent bg-[#F9F9F9] border rounded-lg shadow-md px-4 pt-3 pb-2 mx-auto text-center">
         <ion-icon name="person-circle-outline"></ion-icon>
 
-        <h1 className="text-center mt-3 mb-5">Please Register</h1>
+        <h1 className="text-center mt-2 mb-4">New User Register</h1>
         <form onSubmit={handleRegister} className="login-form">
-          <label htmlFor="name">Enter Full Name</label>
-          <input
-            required
-            type="text"
-            id="name"
-            name="name"
-            className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2 mb-3"
-          />
           <label htmlFor="email">Enter email</label>
           <input
             required
@@ -58,7 +50,7 @@ const Register = () => {
             type="email"
             id="email"
             name="email"
-            className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2 mb-3"
+            className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2 mb-2"
           />
           <label htmlFor="password">Enter password</label>
           <input
@@ -94,7 +86,7 @@ const Register = () => {
             type="submit"
             value="Register"
           />
-          <p className="text-lg">
+          <p className="text-base">
             Already have an account?{" "}
             <Link to="/login" className="no-underline text-primary font-medium">
               Login Here

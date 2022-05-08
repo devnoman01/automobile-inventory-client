@@ -6,7 +6,7 @@ import Banner from "../Banner/Banner";
 import CoreFeatures from "../CoreFeatures/CoreFeatures";
 import FeaturedInventoryItems from "../FeaturedInventoryItems/FeaturedInventoryItems";
 import Statistics from "../Statistics/Statistics";
-import Subscribe from "../ContactUs/ContactUs";
+import ContactUs from "../ContactUs/ContactUs";
 import WhyUs from "../WhyUs/WhyUs";
 
 const Home = () => {
@@ -30,7 +30,8 @@ const Home = () => {
       {/* statistics part (extra-4) */}
       <Statistics />
 
-      <Subscribe />
+      {/* contact part (extra-5) */}
+      <ContactUs />
 
       {/* footer part */}
       <Footer />

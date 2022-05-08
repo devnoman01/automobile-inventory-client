@@ -32,7 +32,7 @@ const SocialLogin = () => {
         {/* google login button with function */}
         <button
           onClick={() => signInWithGoogle()}
-          className="btn border border-2 border-gray-800 shadow-md w-100 d-flex align-items-center justify-content-center gap-2 mx-auto my-3 social-login-button"
+          className="btn border border-2 border-gray-800 text-[#818181] shadow-md w-100 d-flex align-items-center justify-content-center gap-2 mx-auto my-3 social-login-button"
         >
           <img
             style={{ width: "30px" }}

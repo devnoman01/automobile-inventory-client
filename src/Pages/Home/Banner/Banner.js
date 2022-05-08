@@ -11,14 +11,16 @@ const Banner = () => {
           <div className="col-md-6 col-sm-12 banner my-auto">
             <h1>
               Organize Business With{" "}
-              <span className="text-[#DC2626]">Automobile Inventory</span>
+              <span className="text-[#EF4444]">Automobile Inventory</span>
             </h1>
             <p className="my-4">
               Grow faster and get the best out of your automobile business with
               automobile inventory specially developed for dealers and showroom
               owners.
             </p>
-            <button className="btn btn-danger mx-auto">Learn More</button>
+            <button className="bg-[#EF4444] text-white rounded px-6 py-2 hover:bg-[#DC2626] no-underline">
+              Learn More
+            </button>
           </div>
           {/* half width with the image */}
           <div className="col-md-6 col-sm-12 banner-img px-3 my-auto justify-center">
