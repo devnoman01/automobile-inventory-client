@@ -61,7 +61,7 @@ const Register = () => {
             name="email"
             className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2 mb-3"
           />
-          <label htmlFor="passowrd">Enter password</label>
+          <label htmlFor="password">Enter password</label>
           <input
             required
             ref={passwordRef}

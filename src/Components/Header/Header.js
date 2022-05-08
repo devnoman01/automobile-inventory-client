@@ -102,13 +102,13 @@ const Header = () => {
                   <form className="">
                     {user ? (
                       <button
-                        // onClick={handleSignOut}
+                        onClick={handleSignOut}
                         className="btn btn-danger"
                       >
                         Sign out
                       </button>
                     ) : (
-                      <Link to="/login" className="btn primary-button">
+                      <Link to="/login" className="btn btn-danger">
                         Login
                       </Link>
                     )}
