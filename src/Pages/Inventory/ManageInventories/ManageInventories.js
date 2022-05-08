@@ -1,7 +1,10 @@
 import React from "react";
+import useProducts from "../../../Hooks/useProducts";
 import "./ManageInventories.css";
 
 const ManageInventories = () => {
+  const [products, setProducts] = useProducts();
+
   return (
     <div className="container my-5">
       <h1 className="text-center mb-5">Manage Inventories Page</h1>
@@ -47,7 +50,11 @@ const ManageInventories = () => {
           </button>
         </div>
       </div>
-      <div className="border"></div>
+      <div className="inventory-item-parent w-full">
+        {products.map((product) => (
+          <p>{product.name}</p>
+        ))}
+      </div>
     </div>
   );
 };

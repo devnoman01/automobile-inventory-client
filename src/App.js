@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "./Components/Header/Header";
+import Login from "./Pages/Auth/Login/Login";
 import Blogs from "./Pages/Blogs/Blogs";
 import Home from "./Pages/Home/Home/Home";
 import ManageInventories from "./Pages/Inventory/ManageInventories/ManageInventories";
@@ -21,6 +22,7 @@ function App() {
 
         <Route path="/blogs" element={<Blogs />} />
         {/* Protected Routes */}
+        <Route path="/login" element={<Login />} />
 
         {/* Not Found Route */}
         <Route path="*" element={<NotFound />} />

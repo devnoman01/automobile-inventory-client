@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./FeaturedInventoryItem.css";
 
 const FeaturedInventoryItem = ({ product }) => {
-  const { id, name, category, description, image, price } = product;
+  const { id, name, category, description, image, price, quantity } = product;
 
   const navigate = useNavigate();
 
@@ -24,6 +24,15 @@ const FeaturedInventoryItem = ({ product }) => {
         <p className="card-item-title">{name}</p>
         <p className="card-item-description text-[#818181]">
           <small>{description}</small>
+        </p>
+        <p
+          className={
+            quantity
+              ? "font-medium text-[#818181]"
+              : "text-[#f87171] font-medium"
+          }
+        >
+          Stock: {quantity ? quantity : `0 (Out of Stock)`}
         </p>
         <p className="font-semibold text-xl text-[#f87171] card-item-price">
           {price}

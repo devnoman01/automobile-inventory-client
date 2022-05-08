@@ -1,7 +1,8 @@
 .not-found-parent{
-    margin: 100px auto;
+    margin: 50px auto;
 }
 .error-404{
+    margin-top: 100px;
     font-size: 128px;
     color: #DC2626;
 }

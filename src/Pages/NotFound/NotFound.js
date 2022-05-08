@@ -12,9 +12,6 @@ const NotFound = () => {
           Please try to find pages from menubar
         </p>
       </div>
-      <div className="">
-        <Footer></Footer>
-      </div>
     </div>
   );
 };
