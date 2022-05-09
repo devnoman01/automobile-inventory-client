@@ -1,8 +1,12 @@
 import React, { useRef } from "react";
 import { toast } from "react-toastify";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 import "./AddItem.css";
 
 const AddItem = () => {
+  const [user] = useAuthState(auth);
+
   const nameRef = useRef("");
   const categoryRef = useRef("");
   const priceRef = useRef("");
@@ -10,6 +14,7 @@ const AddItem = () => {
   const supplierRef = useRef("");
   const imageRef = useRef("");
   const descriptionRef = useRef("");
+  const email = user.email;
 
   const handleAddItem = (e) => {
     e.preventDefault();
@@ -24,11 +29,12 @@ const AddItem = () => {
     const newVehicle = {
       name,
       category,
+      image,
+      description,
       price,
       quantity,
       supplier,
-      image,
-      description,
+      email,
     };
 
     const url = `http://localhost:5000/vehicle`;

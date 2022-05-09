@@ -14,6 +14,7 @@ import ManageItem from "./Pages/Inventory/ManageItem/ManageItem";
 import ManagesItems from "./Pages/Inventory/ManagesItems/ManagesItems";
 import NotFound from "./Pages/NotFound/NotFound";
 import "./Styles/App.css";
+import MyItems from "./Pages/Inventory/MyItems/MyItems";
 
 function App() {
   return (
@@ -55,10 +56,18 @@ function App() {
           }
         />
         <Route
-          path="//inventory/:vehicleId"
+          path="/inventory/:vehicleId"
           element={
             <RequireAuth>
               <ManageItem />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/myItems"
+          element={
+            <RequireAuth>
+              <MyItems />
             </RequireAuth>
           }
         />

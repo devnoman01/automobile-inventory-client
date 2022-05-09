@@ -1,102 +1,35 @@
 [
-    {
-       "id":1,
-       "name":"MAZDA CX-30",
-       "category":"SUV",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2023/cx-50/build-and-price/carousel-jellies/2023-mazda-cx-50-2.5-s-jet-black-carousel.png",
-       "description":"No matter where your path leads, the Mazda CX-30 with available 2.5 Turbo engine is made to help you follow it. The Skyactiv-G 2.5 Turbo engine delivers up to a responsive 250 hp and 320 lb-ft of torque. It’s a level of performance you don’t usually associate with a CUV.",
-       "price":"$22,500",
-       "quantity":10,
-       "supplier":"MAZDA BANGLADESH"
-    },
-    {
-       "id":2,
-       "name":"MAZDA CX-5",
-       "category":"SUV",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2022/cx-5-p1/build-and-price/trims/carousel/2022-cx5-2.5-s-jet-black-mica-carousel.png",
-       "description":"With its exquisitely sculpted exterior and sophisticated interior space, the 2022 Mazda CX-5 feels like it’s tailored to you. Combined with our now standard i-Activ AWD and increased horsepower available for turbo models, this CUV provides an elevated driving experience.",
-       "price":"$26,250",
-       "quantity":8,
-       "supplier":"MAZDA BANGLADESH"
-    },
-    {
-       "id":3,
-       "name":"MAZDA CX-50",
-       "category":"SUV",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2023/cx-50/build-and-price/carousel-jellies/2023-mazda-cx-50-2.5-s-jet-black-carousel.png",
-       "description":"The temptation to venture into nature becomes even more enticing when the journey becomes its own reward. Enabled by Mazda’s latest generation of driving technology, you’ll feel an incredible sense of oneness and driving experience with the CX-50 on nearly any terrain.",
-       "price":"$26,800",
-       "quantity":7,
-       "supplier":"MAZDA BANGLADESH"
-    },
-    {
-       "id":4,
-       "name":"MAZDA CX-9",
-       "category":"SUV",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2022/cx-9/build-and-price/trims/carousel/2022-mazda-cx-9-trims-_0001_sport.png",
-       "description":"Upholstery plays a unique role in car design. The CX-9 Signature’s leather-trimmed interior is available in either Parchment or Deep Chestnut Nappa and includes details such as quilting and piping on the first- and second-row seats, leather-wrapped steering wheel and Santos Rosewood inlays.",
-       "price":"$35,630",
-       "quantity":5,
-       "supplier":"BD AUTO LTD."
-    },
-    {
-       "id":5,
-       "name":"MAZDA3 SEDAN",
-       "category":"SEDAN",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2022/mazda3-sedan/build-and-price/trims/carousel/2022-m3s-2.0-fwd-jetblack-carousel.png",
-       "description":"Poised to take on the road with even more authority, the Mazda3 is available with a responsive Skyactiv-G 2.5 Turbo engine that delivers up to 250 hp and up to 320 lb-ft of torque. Paired with i-Activ AWD, 2.5 Turbo models deliver a more confident, invigorating driving experience.",
-       "price":"$21,150",
-       "quantity":15,
-       "supplier":"BD AUTO LTD."
-    },
-    {
-       "id":6,
-       "name":"MAZDA3 HATCHBACK",
-       "category":"SEDAN",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2022/mazda3-hatch/build-and-price/carousel/my22_mazda3_hb_fwd_2_5_jetblack_carousel.png",
-       "description":"Poised to take on the road with even more authority, the Mazda3 is available with a responsive Skyactiv-G 2.5 Turbo engine that delivers up to 250 hp and up to 320 lb-ft of torque. Paired with i-Activ AWD, 2.5 Turbo models deliver a more confident, invigorating driving experience.",
-       "price":"$23,100",
-       "quantity":12,
-       "supplier":"BD AUTO LTD."
-    },
-    {
-       "id":7,
-       "name":"MAZDA6",
-       "category":"SEDAN",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2021/mazda6/trim-package-carousel/2021-mazda-6-trims-sport.png",
-       "description":"When you ask, it answers. Emphatically so. The Mazda6 can be equipped with our available Skyactiv-G 2.5 Turbo engine. Delivering up to 250 hp and 320 lb-ft of torque, it’s engineered to be ultra-responsive at low rpm, with power to spare when you’re already off and running.",
-       "price":"$24,475",
-       "quantity":10,
-       "supplier":"BD AUTO LTD."
-    },
-    {
-       "id":8,
-       "name":"MAZDA MX-5 MIATA",
-       "category":"SPORTS CAR",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2022/mx-5-st/trims/sport/2022-mx-5-st-sport-jetblack-carousel.png",
-       "description":"Every MX-5 Miata is engineered with our human-centric development philosophy to help instill the joy of driving. We run countless studies on human characteristics and behaviors to design a vehicle that works harmoniously with you. As a result, the MX-5 feels like an extension of your body, with more precise steering, better control and less fatigue.",
-       "price":"$27,650",
-       "quantity":15,
-       "supplier":"CAR ARENA"
-    },
-    {
-       "id":9,
-       "name":"MAZDA MX-5 MIATA RF",
-       "category":"SPORTS CAR",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/2022/mx-5-rf/build-and-price/trims/carousel/build-and-price-mazda-mx-5-rf-trims-club-carousel.png",
-       "description":"Drawing from the purity of the MX-5 Miata Roadster, the MX-5 Miata RF connects car and driver with elegance and ingenuity. Its Skyactiv-G 2.0 engine delivers 181 hp and 151 lb-ft of torque to create an ideal power-to-weight ratio. The placement of this engine helps the MX-5 RF maintain a nearly perfect 50/50 weight balance, while its unique driving dynamics make the vehicle feel as if it’s an extension of you.",
-       "price":"$35,3501",
-       "quantity":10,
-       "supplier":"CAR ARENA"
-    },
-    {
-       "id":10,
-       "name":"MAZDA MX-30 EV",
-       "category":"ELECTRIC CAR",
-       "image":"https://www.mazdausa.com/siteassets/vehicles/electric-cars/mx-30/packages/carousel-thumbnail/mazda-mx-30-premium-plus-electric-vehicle-v2.jpg",
-       "description":"Our first fully electric vehicle is engineered to deepen the connection between vehicle and driver. Mazda’s brand-new electrification technology, e-Skyactiv, was designed around human characteristics to deliver intuitive handling and a smoother as well as seamless driving experience.",
-       "price":"$33,470",
-       "quantity":5,
-       "supplier":"CAR ARENA"
-    }
- ]
+   {
+      "name":"MAZDA CX-30","category":"SUV","image":"https://www.mazdausa.com/siteassets/vehicles/2023/cx-50/build-and-price/carousel-jellies/2023-mazda-cx-50-2.5-s-jet-black-carousel.png","description":"No matter where your path leads, the Mazda CX-30 with available 2.5 Turbo engine is made to help you follow it. The Skyactiv-G 2.5 Turbo engine delivers up to a responsive 250 hp and 320 lb-ft of torque. It’s a level of performance you don’t usually associate with a CUV.","price":22500,"quantity":30,"supplier":"MAZDA BANGLADESH","email":"aanoman55@gmail.com"
+   },
+   {
+      "name":"MAZDA CX-5","category":"SUV","image":"https://www.mazdausa.com/siteassets/vehicles/2022/cx-5-p1/build-and-price/trims/carousel/2022-cx5-2.5-s-jet-black-mica-carousel.png","description":"With its exquisitely sculpted exterior and sophisticated interior space, the 2022 Mazda CX-5 feels like it’s tailored to you. Combined with our now standard i-Activ AWD and increased horsepower available for turbo models, this CUV provides an elevated driving experience.","price":26250,"quantity":18,"supplier":"MAZDA BANGLADESH","email":"aanoman55@gmail.com"
+   },
+   {
+      "name":"MAZDA CX-50","category":"SUV","image":"https://www.mazdausa.com/siteassets/vehicles/2023/cx-50/build-and-price/carousel-jellies/2023-mazda-cx-50-2.5-s-jet-black-carousel.png","description":"The temptation to venture into nature becomes even more enticing when the journey becomes its own reward. Enabled by Mazda’s latest generation of driving technology, you’ll feel an incredible sense of oneness and driving experience with the CX-50 on nearly any terrain.","price":26800,"quantity":27,"supplier":"MAZDA BANGLADESH","email":"aanoman55@gmail.com"
+   },
+   {
+      "name":"MAZDA CX-9","category":"SUV","image":"https://www.mazdausa.com/siteassets/vehicles/2022/cx-9/build-and-price/trims/carousel/2022-mazda-cx-9-trims-_0001_sport.png","description":"Upholstery plays a unique role in car design. The CX-9 Signature’s leather-trimmed interior is available in either Parchment or Deep Chestnut Nappa and includes details such as quilting and piping on the first- and second-row seats, leather-wrapped steering wheel and Santos Rosewood inlays.","price":35630,"quantity":25,"supplier":"BD AUTO LTD.","email":"devnoman01@gmail.com"
+   },
+   {
+      "name":"MAZDA3 SEDAN","category":"SEDAN","image":"https://www.mazdausa.com/siteassets/vehicles/2022/mazda3-sedan/build-and-price/trims/carousel/2022-m3s-2.0-fwd-jetblack-carousel.png","description":"Poised to take on the road with even more authority, the Mazda3 is available with a responsive Skyactiv-G 2.5 Turbo engine that delivers up to 250 hp and up to 320 lb-ft of torque. Paired with i-Activ AWD, 2.5 Turbo models deliver a more confident, invigorating driving experience.","price":21150,"quantity":15,"supplier":"BD AUTO LTD.","email":"devnoman01@gmail.com"
+   },
+   {
+      "name":"MAZDA3 HATCHBACK","category":"SEDAN","image":"https://www.mazdausa.com/siteassets/vehicles/2022/mazda3-hatch/build-and-price/carousel/my22_mazda3_hb_fwd_2_5_jetblack_carousel.png","description":"Poised to take on the road with even more authority, the Mazda3 is available with a responsive Skyactiv-G 2.5 Turbo engine that delivers up to 250 hp and up to 320 lb-ft of torque. Paired with i-Activ AWD, 2.5 Turbo models deliver a more confident, invigorating driving experience.","price":23100,"quantity":22,"supplier":"BD AUTO LTD.","email":"devnoman01@gmail.com"
+   },
+   {
+      "name":"MAZDA6","category":"SEDAN","image":"https://www.mazdausa.com/siteassets/vehicles/2021/mazda6/trim-package-carousel/2021-mazda-6-trims-sport.png","description":"When you ask, it answers. Emphatically so. The Mazda6 can be equipped with our available Skyactiv-G 2.5 Turbo engine. Delivering up to 250 hp and 320 lb-ft of torque, it’s engineered to be ultra-responsive at low rpm, with power to spare when you’re already off and running.","price":24475,"quantity":20,"supplier":"BD AUTO LTD.","email":"devnoman01@gmail.com"
+   },
+   {
+      "name":"MAZDA MX-5 MIATA","category":"SPORTS CAR","image":"https://www.mazdausa.com/siteassets/vehicles/2022/mx-5-st/trims/sport/2022-mx-5-st-sport-jetblack-carousel.png","description":"Every MX-5 Miata is engineered with our human-centric development philosophy to help instill the joy of driving. We run countless studies on human characteristics and behaviors to design a vehicle that works harmoniously with you. As a result, the MX-5 feels like an extension of your body, with more precise steering, better control and less fatigue.","price":27650,"quantity":25,"supplier":"CAR ARENA","email":"noman.cloudone@gmail.com"
+   },
+   {
+      "name":"MAZDA MX-5 MIATA RF","category":"SPORTS CAR","image":"https://www.mazdausa.com/siteassets/vehicles/2022/mx-5-rf/build-and-price/trims/carousel/build-and-price-mazda-mx-5-rf-trims-club-carousel.png","description":"Drawing from the purity of the MX-5 Miata Roadster, the MX-5 Miata RF connects car and driver with elegance and ingenuity. Its Skyactiv-G 2.0 engine delivers 181 hp and 151 lb-ft of torque to create an ideal power-to-weight ratio. The placement of this engine helps the MX-5 RF maintain a nearly perfect 50/50 weight balance, while its unique driving dynamics make the vehicle feel as if it’s an extension of you.","price":353501,"quantity":10,"supplier":"CAR ARENA","email":"noman.cloudone@gmail.com"
+   },
+   {
+      "name":"MAZDA MX-30 EV","category":"ELECTRIC CAR","image":"https://www.mazdausa.com/siteassets/vehicles/electric-cars/mx-30/packages/carousel-thumbnail/mazda-mx-30-premium-plus-electric-vehicle-v2.jpg","description":"Our first fully electric vehicle is engineered to deepen the connection between vehicle and driver. Mazda’s brand-new electrification technology, e-Skyactiv, was designed around human characteristics to deliver intuitive handling and a smoother as well as seamless driving experience.","price":33470,"quantity":12,"supplier":"CAR ARENA","email":"aanoman55@gmail.com"
+   },
+   {
+      "name":"Toyota CX-R","category":"SUV","price":"90000","quantity":"99","supplier":"TESLA","image":"https://www.toyota.com/imgix/content/dam/toyota/jellies/relative/2022/4runner/base.png","description":"This is dummy description","email":"noman.cloudone@gmail.com"
+   }
+]
