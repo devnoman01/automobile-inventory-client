@@ -1,37 +1,56 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import "./InventoryItemCard.css";
 
 const InventoryItemCard = ({ product }) => {
+  const { image, name, _id, category, quantity, supplier, price } = product;
   const navigate = useNavigate();
   // dynamic route navigation
   const navigateToVehicletDetail = (_id) => {
     navigate(`/inventory/${_id}`);
   };
 
+  const handleItemDelete = (id) => {
+    const proceed = window.confirm("Are you sure to delete item?");
+    if (proceed) {
+      console.log("deleting user with id:", id);
+      const url = `http://localhost:5000/vehicle/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          toast.success("Inventory Item Deleted");
+        });
+    }
+  };
+
   return (
     <div className="inventory-item-card flex items-center border shadow-sm lg:w-full mx-auto px-3 mb-3 bg-white rounded border-gray-100 sm:flex-row flex-col">
       <div className="sm:w-28 sm:h-28 h-2/3 w-2/3 inline-flex items-center justify-center">
-        <img className="img-fluid" src={product.image} alt="" />
+        <img className="img-fluid" src={image} alt="" />
       </div>
       <div className="flex-grow px-2 sm:mt-0 inventory-item-card-info">
-        <h2 className="text-xl title-font font-medium my-0">{product.name}</h2>
-        <p className="font-medium my-0">ID: {product._id}</p>
+        <h2 className="text-xl title-font font-medium my-0">{name}</h2>
+        <p className="font-medium my-0">ID: {_id}</p>
         <p className="font-medium my-0 inline-block mr-4">
-          Category: {product.category}
+          Category: {category}
         </p>
-        <p className="font-medium my-0 inline-block">
-          Stock: {product.quantity}
-        </p>
+        <p className="font-medium my-0 inline-block">Stock: {quantity}</p>
         <br />
         <p className="text-sm font-medium my-0 inline-block">
-          Dealer : {product.supplier}
+          Dealer : {supplier}
         </p>
+        <br />
+        <h5 className="text-base font-medium my-0 inline-block">
+          Price : <span className="font-bold">$ {price}</span>
+        </h5>
       </div>
       <div className="item-card-btn-div">
         {/* <button className="btn btn-success btn-sm mr-1 w-auto d-flex flex-row align-items-center"> */}
         <button
-          onClick={() => navigateToVehicletDetail(product._id)}
+          onClick={() => navigateToVehicletDetail(_id)}
           className="px-1 py-1 rounded bg-[#DDFBEC] text-[#186340] border-1 border-[#186340] mr-1 w-auto d-flex flex-row align-items-center"
         >
           <svg
@@ -51,7 +70,10 @@ const InventoryItemCard = ({ product }) => {
           Update
         </button>
         {/* <button className="btn btn-danger btn-sm ml-1 w-auto d-flex flex-row align-items-center"> */}
-        <button className="px-1 py-1 rounded bg-[#fee2e2] text-[#b91c1c] border-1 border-[#b91c1c] ml-1 w-auto d-flex flex-row align-items-center">
+        <button
+          onClick={() => handleItemDelete(_id)}
+          className="px-1 py-1 rounded bg-[#fee2e2] text-[#b91c1c] border-1 border-[#b91c1c] ml-1 w-auto d-flex flex-row align-items-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 inline-block mr-1"

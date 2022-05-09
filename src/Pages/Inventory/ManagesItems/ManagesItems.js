@@ -1,9 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import useVehicles from "../../../Hooks/useVehicles";
 import InventoryItemCard from "../InventoryItemCard/InventoryItemCard";
 
 const ManagesItems = () => {
   const [products, setProducts] = useVehicles();
+  const navigate = useNavigate();
+
+  const navigateAddItem = () => {
+    navigate("/addItem");
+  };
   return (
     <div className="w-full h-full bg-gray-100">
       <div className="container py-5">
@@ -45,7 +51,10 @@ const ManagesItems = () => {
             </select>
           </div>
           <div className="col-lg-auto col-sm-12 mb-2 text-center">
-            <button className="btn btn-success add-item-button">
+            <button
+              onClick={() => navigateAddItem()}
+              className="btn btn-success add-item-button"
+            >
               Add New Inventory Item
             </button>
           </div>

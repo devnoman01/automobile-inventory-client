@@ -35,7 +35,8 @@ const FeaturedInventoryItem = ({ product }) => {
           Stock: {quantity ? quantity : `0 (Out of Stock)`}
         </p>
         <p className="font-semibold text-xl text-[#f87171] card-item-price">
-          {price}
+          {" "}
+          $ {price}
         </p>
       </div>
       <div className="card-button-div mx-auto">

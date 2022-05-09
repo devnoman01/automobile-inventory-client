@@ -1,0 +1,21 @@
+.stock-update-form input::-webkit-outer-spin-button,
+.stock-update-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;   /* Chrome */
+    margin: 0;
+}
+
+.stock-update-form input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.stock-update-heading{
+    text-align: left;
+}
+
+/* smartphone view CSS */
+
+@media only screen and (max-width: 1023px) {
+    .stock-update-heading{
+        text-align: center;
+    }
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../../../Components/Footer/Footer";
 import useVehicleDetail from "../../../Hooks/useVehicleDetail";
-import useVehicles from "../../../Hooks/useVehicles";
+import "./ManageItem.css";
 
 const ManageItem = () => {
   const { vehicleId } = useParams();
@@ -29,11 +29,14 @@ const ManageItem = () => {
             <p className="leading-relaxed font-medium">Supplier: {supplier}</p>
             <div className="flex border-b-2 pb-2 mb-3">
               <span className="title-font font-medium text-2xl">{price}</span>
-              <button className="flex ml-auto bg-[#DDFBEC] text-[#186340] border-1 border-[#186340] rounded px-6 py-2 hover:text-[#DDFBEC] hover:bg-[#186340]">
+              <button className="flex ml-auto bg-[#DDFBEC] text-[#186340] border-1 border-[#186340] rounded px-6 py-1 hover:text-[#DDFBEC] hover:bg-[#186340]">
                 Delivered
               </button>
             </div>
-            <div className="flex align-middle">
+            <div className="mt-4 stock-update-heading">
+              <h5 className="pb-2 text-2xl">Restock Item</h5>
+            </div>
+            <form className="stock-update-form flex align-middle px-2 py-3 bg-zinc-100 rounded shadow-md border-gray-300 border-2">
               <p className="font-bold text-xl w-full mr-1 my-auto">Add Stock</p>
               <input
                 className="mr-2 w-full text-xl font-semibold text-center rounded text-[#186340] border-1 border-[#186340]"
@@ -41,10 +44,10 @@ const ManageItem = () => {
                 name="quantity"
                 id=""
               />
-              <button className="w-full bg-[#DDFBEC] text-[#186340] border-1 border-[#186340] rounded px-2 py-2 hover:text-[#DDFBEC] hover:bg-[#186340]">
+              <button className="w-full bg-[#DDFBEC] text-[#186340] border-1 border-[#186340] rounded px-2 py-1 hover:text-[#DDFBEC] hover:bg-[#186340]">
                 Stock Update
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

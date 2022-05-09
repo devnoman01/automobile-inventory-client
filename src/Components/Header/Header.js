@@ -90,7 +90,7 @@ const Header = () => {
                         <li className="nav-item">
                           <Link
                             className="nav-link text-dark font-medium menu-link"
-                            to="/addItems"
+                            to="/addItem"
                           >
                             Add Item
                           </Link>

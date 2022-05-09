@@ -1,0 +1,10 @@
+
+.add-item-form input::-webkit-outer-spin-button,
+.add-item-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;   /* Chrome */
+    margin: 0;
+}
+
+.add-item-form input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
