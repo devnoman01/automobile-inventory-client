@@ -3,7 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import "./FeaturedInventoryItem.css";
 
 const FeaturedInventoryItem = ({ product }) => {
-  const { _id, name, category, description, image, price, quantity } = product;
+  const { _id, name, category, description, image, price, quantity, supplier } =
+    product;
 
   const navigate = useNavigate();
 
@@ -34,6 +35,7 @@ const FeaturedInventoryItem = ({ product }) => {
         >
           Stock: {quantity ? quantity : `0 (Out of Stock)`}
         </p>
+        <p className="font-semibold">{supplier}</p>
         <p className="font-semibold text-xl text-[#f87171] card-item-price">
           {" "}
           $ {price}
