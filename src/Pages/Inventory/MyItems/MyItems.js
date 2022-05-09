@@ -13,7 +13,7 @@ const MyItems = () => {
   useEffect(() => {
     const getMyItems = async () => {
       const email = user.email;
-      const url = `http://localhost:5000/myItem?email=${email}`;
+      const url = `https://pacific-earth-34282.herokuapp.com/myItem?email=${email}`;
       const { data } = await axios.get(url);
       setUserItems(data);
     };
@@ -21,9 +21,10 @@ const MyItems = () => {
   }, [user]);
 
   return (
-    <div>
-      {userItems.map((item) => (
-        <li key={item._id}>{item.name}</li>
+    <div className="container px-3 py-5">
+      <h1 className="text-center mb-4">My Items</h1>
+      {userItems.map((product) => (
+        <InventoryItemCard key={product._id} product={product} />
       ))}
     </div>
   );

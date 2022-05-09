@@ -4,16 +4,16 @@ const useVehicleDetail = (vehicleId) => {
   const [vehicle, setVehicle] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:5000/vehicle/${vehicleId}`;
+    const url = `https://pacific-earth-34282.herokuapp.com/vehicle/${vehicleId}`;
 
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
         setVehicle(data);
       });
-  }, [vehicleId]);
+  }, [vehicleId, vehicle]);
 
-  return [vehicle];
+  return [vehicle, setVehicle];
 };
 
 export default useVehicleDetail;

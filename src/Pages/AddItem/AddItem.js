@@ -37,7 +37,7 @@ const AddItem = () => {
       email,
     };
 
-    const url = `http://localhost:5000/vehicle`;
+    const url = `https://pacific-earth-34282.herokuapp.com/vehicle`;
     fetch(url, {
       method: "POST",
       headers: {

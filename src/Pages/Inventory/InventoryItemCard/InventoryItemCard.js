@@ -15,7 +15,7 @@ const InventoryItemCard = ({ product }) => {
     const proceed = window.confirm("Are you sure to delete item?");
     if (proceed) {
       console.log("deleting user with id:", id);
-      const url = `http://localhost:5000/vehicle/${id}`;
+      const url = `https://pacific-earth-34282.herokuapp.com/vehicle/${id}`;
       fetch(url, {
         method: "DELETE",
       })

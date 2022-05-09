@@ -5,7 +5,7 @@ const useVehicles = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/vehicle")
+    fetch("https://pacific-earth-34282.herokuapp.com/vehicle")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [products]);
