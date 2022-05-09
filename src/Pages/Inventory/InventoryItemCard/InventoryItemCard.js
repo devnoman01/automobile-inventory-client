@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./InventoryItemCard.css";
 
 const InventoryItemCard = ({ product }) => {
+  const navigate = useNavigate();
+  // dynamic route navigation
+  const navigateToVehicletDetail = (_id) => {
+    navigate(`/inventory/${_id}`);
+  };
+
   return (
     <div className="inventory-item-card flex items-center border shadow-sm lg:w-full mx-auto px-3 mb-3 bg-white rounded border-gray-100 sm:flex-row flex-col">
       <div className="sm:w-28 sm:h-28 h-2/3 w-2/3 inline-flex items-center justify-center">
@@ -23,7 +30,10 @@ const InventoryItemCard = ({ product }) => {
       </div>
       <div className="item-card-btn-div">
         {/* <button className="btn btn-success btn-sm mr-1 w-auto d-flex flex-row align-items-center"> */}
-        <button className="px-1 py-1 rounded bg-[#DDFBEC] text-[#186340] border-1 border-[#186340] mr-1 w-auto d-flex flex-row align-items-center">
+        <button
+          onClick={() => navigateToVehicletDetail(product._id)}
+          className="px-1 py-1 rounded bg-[#DDFBEC] text-[#186340] border-1 border-[#186340] mr-1 w-auto d-flex flex-row align-items-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 inline-block mr-1"

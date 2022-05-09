@@ -8,7 +8,7 @@ const FeaturedInventoryItem = ({ product }) => {
   const navigate = useNavigate();
 
   // dynamic route navigation
-  const navigateToProductDetail = (_id) => {
+  const navigateToVehicletDetail = (_id) => {
     navigate(`/inventory/${_id}`);
   };
 
@@ -40,7 +40,7 @@ const FeaturedInventoryItem = ({ product }) => {
       </div>
       <div className="card-button-div mx-auto">
         <button
-          onClick={() => navigateToProductDetail(_id)}
+          onClick={() => navigateToVehicletDetail(_id)}
           className="bg-[#fee2e2] text-[#b91c1c] font-semibold no-underline card-link d-flex rounded py-2 px-6"
         >
           Stock Update
