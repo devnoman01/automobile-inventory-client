@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Login.css";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -16,7 +16,6 @@ const Login = () => {
   const location = useLocation();
   let from = location.state?.from?.pathname || "/home";
   let errorElement;
-
   const emailRef = useRef("");
 
   const handleLogin = async (e) => {
@@ -24,7 +23,6 @@ const Login = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     await signInWithEmailAndPassword(email, password);
-    await toast.success("Login successful");
   };
 
   if (loading) {
@@ -33,6 +31,7 @@ const Login = () => {
 
   if (user) {
     navigate(from, { replace: true });
+    toast.success("Login successful");
   }
 
   if (error) {
@@ -51,7 +50,7 @@ const Login = () => {
   };
 
   return (
-    <div className="col-lg-3 col-md-6 col-sm-12 mx-auto px-3 my-auto">
+    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mx-auto px-3 my-auto">
       <div className="login-form-parent bg-[#F9F9F9] border rounded-lg shadow-md px-4 pt-3 pb-2 mx-auto text-center">
         <ion-icon name="person-circle-outline"></ion-icon>
 

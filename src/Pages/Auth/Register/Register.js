@@ -37,7 +37,7 @@ const Register = () => {
   }
 
   return (
-    <div className="col-lg-3 col-md-6 col-sm-12 mx-auto px-3">
+    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mx-auto px-3">
       <div className="login-form-parent bg-[#F9F9F9] border rounded-lg shadow-md px-4 pt-3 pb-2 mx-auto text-center">
         <ion-icon name="person-circle-outline"></ion-icon>
 

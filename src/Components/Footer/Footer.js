@@ -12,11 +12,6 @@ import {
 import "./Footer.css";
 
 const Footer = () => {
-  // const handleSubscribe = (e) => {
-  //   e.preventDefault();
-  //   e.target.reset();
-  //   toast.success("Thanks for Subscribing");
-  // };
   return (
     <footer className="w-full bg-[#FEE2E2]">
       <div className="container footer-container">
